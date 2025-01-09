@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="A website made for Fernando Gonzalez, for the course wdd231.">
+    <meta author="Fernando Gonzalez"> 
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
     <title>Fernando G</title>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <main><h1>hello !!!!</h1></main>
+    <header>
+        <div>
+            <img src="#" alt="an image of me">
+            <h1>Fernando Gonzalez</h1>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h2>COurse Work</h2>
+        </section>
+        <section>
+            <h2>Santiago, Chile</h2>
+        </section>
+        <section>
+            <h2>Web and Computer Programming Certificate</h2>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-dev">
+            <p>©<span id="currentYear"></span> - Desarrollado por Fernando Gonzalez | Santiago de Chile</p>
+            <p>Ultima Modificación: <span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>
