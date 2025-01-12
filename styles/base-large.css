@@ -1,0 +1,36 @@
+@media screen and (min-width: 576px) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    section.course {}
+
+    main .link-courses {
+        grid-column: 1 / -1;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    main .link-courses .ul-courses-filter ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main .link-courses .ul-courses ul {
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+    }
+
+    main .link-courses .ul-courses ul li {
+        flex: 1 1 calc(33.33% - 20px);
+        box-sizing: border-box;
+    }
+}

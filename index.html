@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="A website made for Fernando Gonzalez, for the course wdd231.">
-    <meta author="Fernando Gonzalez"> 
+    <meta author="Fernando Gonzalez">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/navbar.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
     <title>Fernando G</title>
     <script src="scripts/main.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navbar.js" defer></script>
 </head>
+
 <body>
     <header>
-        <div>
-            <img src="#" alt="an image of me">
-            <h1>Fernando Gonzalez</h1>
-        </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">GitHub Profile</a></li>
-            <li><a href="#">LinkedIn</a></li>
-        </ul>
+        <nav class="navbar">
+            <a class="nav-branding">
+                <h1>Fernando Gonzalez</h1>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Chamber</a></li>
+                <li class="nav-item"><a class="nav-link" href="">GitHub Profile</a></li>
+                <li class="nav-item"><a class="nav-link"
+                        href="https://www.linkedin.com/in/fergonzalez-valdez/">LinkedIn</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
+
     <main>
-        <section>
-            <h2>COurse Work</h2>
+        <section class="course">
+            <h2>Course Work</h2>
         </section>
         <section>
             <h2>Santiago, Chile</h2>
+            <img src="" alt="">
         </section>
-        <section>
+        
+        <section class="link-courses">
             <h2>Web and Computer Programming Certificate</h2>
+            <div class="ul-courses-filter">
+                <ul >
+                    <li><a class="button-29" href="">All</a></li>
+                    <li><a class="button-29" href="">CSE</a></li>
+                    <li><a class="button-29" href="">WDD</a></li>
+                </ul>
+            </div>
+            <div class="ul-courses">
+                <ul >
+                    <li><a class="button-31" href="">CSE 110</a></li>
+                    <li><a class="button-31" href="">WDD 130</a></li>
+                    <li><a class="button-31" href="">CSE 111</a></li>
+                    <li><a class="button-31" href="">CSE 210</a></li>
+                    <li><a class="button-31" href="">WDD 131</a></li>
+                    <li><a class="button-31" href="">WDD 231</a></li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
@@ -45,4 +76,5 @@
         </div>
     </footer>
 </body>
+
 </html>
