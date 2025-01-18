@@ -120,9 +120,12 @@ main .link-courses .ul-courses-filter ul {
     flex-wrap: wrap;
 }
 
-
+.country {
+    text-align: center;
+}
 
 .country img {
+
     max-width: 400px;
 }
 
