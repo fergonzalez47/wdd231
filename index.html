@@ -11,54 +11,69 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
     <link rel="stylesheet" href="styles/navbar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
     <title>Fernando G</title>
     <script src="scripts/main.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navbar.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <a class="nav-branding">
-                <h1>Fernando Gonzalez</h1>
-            </a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Chamber</a></li>
-                <li class="nav-item"><a class="nav-link" href="">GitHub Profile</a></li>
-                <li class="nav-item"><a class="nav-link"
-                        href="https://www.linkedin.com/in/fergonzalez-valdez/">LinkedIn</a></li>
+
+        <div class="presentation">
+
+            <h1>Fernando Gonzalez</h1>
+
+            <img src="images/me.png" alt="a picture of fernando">
+        </div>
+
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active" title="Home">Home</a></li>
+                <li><a href="#" title="Chamber">Chamber</a></li>
+                <li><a href="#" title="GitHub Profile">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/fergonzalez-valdez/" title="LinkedIn">LinkedIn</a></li>
+
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
         </nav>
     </header>
 
     <main>
         <section class="course">
             <h2>Course Work</h2>
+            <div>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </div>
         </section>
-        <section>
+        <section class="country">
             <h2>Santiago, Chile</h2>
-            <img src="" alt="">
+            <img src="images/hero-santiago.webp" alt="">
         </section>
-        
+
         <section class="link-courses">
             <h2>Web and Computer Programming Certificate</h2>
             <div class="ul-courses-filter">
-                <ul >
-                    <li><a class="button-29" href="">All</a></li>
-                    <li><a class="button-29" href="">CSE</a></li>
-                    <li><a class="button-29" href="">WDD</a></li>
+                <ul>
+                    <li><button id="all" class="button-24" href="">All</button></li>
+                    <li><button id="cse" class="button-24" href="">CSE</button></li>
+                    <li><button id="wdd" class="button-24" href="">WDD</button></li>
                 </ul>
             </div>
             <div class="ul-courses">
-                <ul >
+                <p class="credit-parent">The total number of course listed below is <span id="credits"></span></p>
+</p>
+                <ul id="display-courses">
                     <li><a class="button-31" href="">CSE 110</a></li>
                     <li><a class="button-31" href="">WDD 130</a></li>
                     <li><a class="button-31" href="">CSE 111</a></li>
@@ -72,6 +87,7 @@
     <footer>
         <div class="footer-dev">
             <p>©<span id="currentYear"></span> - Desarrollado por Fernando Gonzalez | Santiago de Chile</p>
+            <img src="images/chile.png" alt="chile flag">
             <p>Ultima Modificación: <span id="lastModified"></span></p>
         </div>
     </footer>
