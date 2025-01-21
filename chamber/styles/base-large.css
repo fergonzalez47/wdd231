@@ -1,0 +1,61 @@
+:root {
+    --color-primary: #2f4858;
+    --color-secondary: #33658a;
+    --color-accent: #86bbd8;
+    --color-light: #f6ae2d;
+    --color-warning: #f26419;
+
+    /* fonts */
+
+    --font-bangers: "Bangers", serif;
+    --font-bangers-weight: 400;
+
+    --font-montserrat: "Montserrat", serif;
+
+
+    --font-hind: "Hind Mysuru", serif;
+    --font-hind-weight: 400;
+}
+
+
+@media screen and (min-width: 576px) {
+    /* FOOTER */
+
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+
+    /* directory */
+
+
+    .list .card {
+        display: flex;
+        flex-wrap: wrap;
+        /* Permite que los elementos bajen de línea cuando no haya espacio */
+        gap: 15px;
+        align-items: center;
+
+
+
+    }
+
+    .list .card>* {
+
+
+        flex: 1 1 100px;
+        /* Distribuye el espacio equitativamente y permite reducción */
+        min-width: 100px;
+
+
+    }
+
+
+
+
+
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A website created by Fernando Gonzalez for Chamber of Commerce Site as part of the WDD231 course.">
+    <meta name="author=" content="Fernando Gonzalez">
+    <!-- facebook -->
+    <meta property="og:url" content="https://fergonzalez47.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content=" Chamber of Commerce Maipu " />
+    <meta property="og:description" content="Local business directory of The Chamber of Commerce of Maipú, Santiago." />
+    <meta property="og:image"
+        content="https://storage.googleapis.com/chile-travel-cdn/2021/08/Vitrina_Centro_santiago-1-1536x1025.jpg">
+    <title>Directory - Maipu Chamber of Commerce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Hind+Mysuru:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="logo-container">
+                <a href="index.html"><img id="logo" src="images/maipulogo.png" alt="site logo"></a>
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li><a href="directory.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a class="active-link" href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="section-btns">
+            <h2>Business Directory</h2>
+            <div class="btns">
+                <button id="btn-grid"><img src="images/grid.svg" alt="grid icon"></button>
+                <button id="btn-list"><img src="images/list.svg" alt="list icon"></button>
+            </div>
+        </section>
+        <section id="cards" class="grid">
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-inf">
+            <h4>Maipu Chamber of Commerce</h4>
+            <p>Plaza de Maipu 1450</p>
+            <p>Plaza de Maipu 1450</p>
+            <p>info@maipucc.cl</p>
+            <p>2 2245 4003</p>
+        </div>
+        <div class="footer-socialmedia">
+            <ul>
+                <li>
+                    <a target="_blank" href="ttps://www.linkedin.com/in/fergonzalez-valdez/">
+                        <img src="images/icon-linkedin.svg" alt="LinkedIn icon">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://web.facebook.com/fer.shinoda.7">
+                        <img src="images/icon-facebook.svg" alt="Facebook icon">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/@FernandoGonzalez-pv2zp">
+                        <img src="images/icon-youtube.svg" alt="Youtube icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-dev">
+            <p>WDD231 Class Project</p>
+            <p>Fernando Gonzalez</p>
+            <p>©<span id="currentYear"></span> Maipu Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

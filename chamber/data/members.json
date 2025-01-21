@@ -1,0 +1,74 @@
+{
+  "companies": [
+    {
+    "name": "Artesanía Rivero",
+    "owner": "Natalia Rivero",
+    "address": "Av. Pajaritos 3456, Maipú, Santiago",
+    "phone": "+56 9 8765 4321",
+    "website": "https://artesaniasrivero.cl",
+    "image": "https://placehold.co/400",
+    "membership_level": 2,
+    "description": "Fabricación de accesorios y diseños en madera tallada con láser. Personalización de productos y encargos especiales."
+  },
+  {
+    "name": "Cafetería El Grano",
+    "owner": "Andrés Gómez",
+    "address": "Calle Central 123, Maipú, Santiago",
+    "phone": "+56 9 7654 3210",
+    "website": "https://cafeteriaelgrano.cl",
+    "image": "https://placehold.co/400",
+    "membership_level": 3,
+    "description": "Cafetería con especialidad en café de grano y pastelería artesanal."
+  },
+  {
+    "name": "Bicicletas Maipú",
+    "owner": "Fernanda Morales",
+    "address": "Av. 5 de Abril 6789, Maipú, Santiago",
+    "phone": "+56 2 2345 6789",
+    "website": "https://bicicletasmaipu.cl",
+    "image": "https://placehold.co/400",
+    "membership_level": 1,
+    "description": "Venta, reparación y accesorios para bicicletas."
+  },
+  {
+    "name": "Carnicería Don Pedro",
+    "owner": "Pedro Martínez",
+    "address": "Calle San Martín 456, Maipú, Santiago",
+    "phone": "+56 9 6543 2109",
+    "website": "https://carniceriadonpedro.cl",
+    "image": "https://placehold.co/400",
+    "membership_level": 2,
+    "description": "Carnes de calidad y embutidos caseros."
+  },
+  {
+    "name": "Emporio Verde",
+    "owner": "Camila Rodríguez",
+    "address": "Av. Los Pinos 789, Maipú, Santiago",
+    "phone": "+56 9 5432 1098",
+    "website": "https://emporioverde.cl",
+    "image": "https://placehold.co/400",
+    "membership_level": 3,
+    "description": "Tienda de productos naturales, orgánicos y sin gluten."
+  },
+  {
+    "name": "Automotriz Maipú",
+    "owner": "Jorge Fuentes",
+    "address": "Av. Camino Melipilla 890, Maipú, Santiago",
+    "phone": "+56 9 4321 0987",
+    "website": "https://automotrizmaipu.cl",
+    "image": "https://placehold.co/400",
+    "membership_level": 1,
+    "description": "Taller mecánico y servicio automotriz especializado."
+  },
+  {
+    "name": "Veterinaria San Francisco",
+    "owner": "Valentina Orellana",
+    "address": "Calle El Descanso 567, Maipú, Santiago",
+    "phone": "+56 9 3210 9876",
+    "website": "https://vetsanfrancisco.cl",
+    "image": "https://placehold.co/400",
+    "membership_level": 2,
+    "description": "Atención veterinaria, peluquería canina y venta de insumos para mascotas."
+  }
+]
+}
