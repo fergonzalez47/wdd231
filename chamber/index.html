@@ -27,8 +27,9 @@
     <link rel="stylesheet" href="styles/base-large.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/header.css">
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/main.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
     <link rel="icon" href="images/favicon.ico">
 </head>
@@ -64,9 +65,27 @@
         </section>
 
         <section class="home">
-            <div class="events"></div>
-            <div class="weather"></div>
-            <div class="forecast"></div>
+            <h1>Maipu - Chamber of Commerce</h1>
+            <div class="events">
+                <h2>Events</h2>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Aut rerum possimus est,
+                    repellat enim modi sunt aliquam beatae
+                    sapiente, illum voluptatem incidunt haru
+                    m? Dolorem placeat error autem. Error,
+                    fuga saepe.</p>
+            </div>
+            <div class="weather">
+                <h2>Current Weather</h2>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="weather"></figcaption>
+                </figure>
+            </div>
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast"></div>
+            </div>
         </section>
 
         <section class="business-list">
