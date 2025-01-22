@@ -42,6 +42,12 @@ h6 {
 }
 
 
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
 
 
 a {
@@ -71,6 +77,99 @@ a:hover {
 a:active {
     color: var(--color-warning);
 }
+
+
+
+
+/* hero */
+
+.hero {
+    height: 50vh;
+    width: 100%;
+    background-image: url("../images/hero.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.hero .hero-content {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.hero .hero-content p {
+    margin-top: 4rem;
+
+    /* From https://css.glass */
+
+    background: rgba(21, 33, 43, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(51, 101, 138, 0.14);
+    padding: 1rem;
+    font-size: clamp(1rem, 3vw, 4rem);
+    color: white;
+    text-align: center;
+    align-content: center;
+
+}
+
+
+.cta-btn {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-warning);
+    border-radius: 4px;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    border-style: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    padding: .5rem;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50%;
+    transition: 0.2s ease-out;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+    opacity: .75;
+    color: honeydew;
+    text-decoration: none;
+    
+}
+
+
+.cta-btn:hover {
+    animation: rotate 0.7s ease-in-out both;
+}
+
+.cta-btn:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+
+
 
 
 /* FOOTER */
@@ -207,7 +306,7 @@ footer .footer-socialmedia ul {
     justify-items: center;
     text-align: center; */
     /* Distribuye el espacio, pero permite reducción */
-    
+
     /* Evita que los elementos sean demasiado pequeños */
 
 
@@ -222,3 +321,48 @@ footer .footer-socialmedia ul {
     background-color: var(--color-accent);
 }
 
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
