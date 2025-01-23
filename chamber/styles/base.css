@@ -255,10 +255,10 @@ h3 {
 
 #business-list figure {
     /* background-color: white; */
-    font-size: clamp(.8rem, .8vw, 1rem);
+    font-size: clamp(.7rem, .7vw, 1rem);
     display: flex;
     flex-wrap: wrap;
-    max-width: 380px;
+    max-width: 420px;
     padding: .25rem;
     border-radius: 10px;
     background-color: white;
@@ -268,12 +268,13 @@ h3 {
 
 #business-list figure img {
     border-radius: 10px;
-    max-width: 140px;
+    max-width: 145px;
     object-fit: fill;
     height: auto;
 }
 
 #business-list figure figcaption {
+    padding: 10px;
     max-width: 200px;
     white-space: normal;
     padding: .25rem;
