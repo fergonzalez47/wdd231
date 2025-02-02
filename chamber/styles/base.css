@@ -263,7 +263,7 @@ h3 {
     border-radius: 10px;
     background-color: white;
     justify-content: center;
-    
+
 }
 
 #business-list figure img {
@@ -319,9 +319,6 @@ footer .footer-socialmedia ul {
     flex-wrap: wrap;
     gap: .5rem;
 }
-
-
-
 
 
 
@@ -439,6 +436,214 @@ footer .footer-socialmedia ul {
     background-color: var(--color-accent);
 }
 
+
+
+
+
+.button-56 {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid var(--);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    height: 40px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-56:after {
+    background-color: var(--color-light);
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 40px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(6px, 6px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button-56:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+.button-56:hover {
+    outline: 0;
+}
+
+
+
+
+
+/* join.html */
+
+.main-join {
+    display: grid;
+    row-gap: 1rem;
+}
+
+
+#membership-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    align-items: center;
+    align-content: start;
+    gap: 1rem;
+}
+
+.membership-container-title {
+    grid-column: 1 / -1;
+    background-color: var(--color-light);
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.membership-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 10px;
+    max-height: 200px;
+    padding: 1rem;
+    transition: 0.3s;
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+
+
+
+
+
+/* dialog */
+
+
+
+dialog {
+    margin: 1rem auto;
+    top: 30%;
+    border: 1px solid rgba(172, 170, 170, 0.685);
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 90%;
+    max-width: 500px;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+::backdrop {
+    background-color: rgba(61, 58, 78, 0.3);
+}
+
+
+dialog p,
+dialog h2 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+dialog h2 {
+    margin: .2rem auto .6rem auto;
+    color: var(--color-secondary);
+
+}
+
+
+
+dialog button {
+    position: absolute;
+    top: 1.4rem;
+    right: 1.6rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+dialog[open] {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+
+
+/* thanks.html */
+
+
+#display-result {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.custom-table th, .custom-table td  {
+ border: 1px solid black;
+ text-align: center;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+dialog.closing {
+    animation: fadeOut 0.2s ease-in forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
 
 
 @keyframes rotate {

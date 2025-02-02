@@ -86,6 +86,9 @@ const all = document.getElementById("all");
 const cse = document.getElementById("cse");
 const wdd = document.getElementById("wdd");
 
+// for displaying modal information
+const courseDetails = document.getElementById("course-details");
+const closeModal = document.getElementById("closeModal");
 
 all.addEventListener("click", () => {
 
@@ -123,14 +126,56 @@ function DisplayCourses(courseList) {
     ulCourses.innerHTML = "";
     credits.innerHTML = "";
     credits.innerHTML = creditUnits;
+
+
     courseList.forEach(course => {
-        course = `<li><a class="button-31" href="">${course.subject} ${course.number}</a></li>`;
-        ulCourses.innerHTML += course;
+        const li = document.createElement("li");
+        li.classList.add("button-31");
+        li.textContent = `${course.subject} ${course.number}`;
+
+
+        li.addEventListener("click", () => {
+            displayModal(course);
+        })
+
+        ulCourses.appendChild(li);
+
+
     });
 
 }
 
 
+
+
+
+
+
+
+function displayModal(course) {
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong>${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology}</p>
+    `;
+
+    courseDetails.showModal(); 
+
+    document.getElementById("closeModal").addEventListener("click", () => {
+        courseDetails.classList.add("closing"); 
+        setTimeout(() => {
+            courseDetails.close(); 
+            courseDetails.classList.remove("closing");
+        }, 350);
+    });
+
+
+}
 
 
 

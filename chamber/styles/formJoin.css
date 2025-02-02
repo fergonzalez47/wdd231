@@ -1,0 +1,122 @@
+:root {
+    --color-primary: hwb(203 18% 65%);
+    --color-secondary: #33658a;
+    --color-accent: #8ec6e4;
+    --color-light: #f6ae2d;
+    --color-warning: #f26419;
+
+    /* fonts */
+
+    --font-bangers: "Bangers", serif;
+    --font-bangers-weight: 400;
+
+    --font-montserrat: "Montserrat", serif;
+
+
+    --font-hind: "Hind Mysuru", serif;
+    --font-hind-weight: 400;
+
+}
+
+
+
+
+.welcome-join {
+    margin: 2.75rem auto;
+}
+
+
+.form-join {
+    background-color: rgba(232, 247, 252, 0.616);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+.form-join label {
+    display: grid;
+    color: var(--color-primary);
+    margin-bottom: .125rem;
+}
+
+.form-join label input {
+    box-sizing: border-box;
+    margin-left: .25rem;
+    border: 1px solid rgba(167, 155, 155, 0.829);
+    outline: none;
+    width: 100%;
+    border-radius: 8px;
+    height: 52px;
+    transition: 0.3s;
+    padding: .8rem .5rem .5rem .5rem;
+}
+
+.form-join label input:focus {
+    box-sizing: border-box;
+    border: 2px solid var(--color-light);
+
+}
+.form-join label textarea {
+    width: 100%;
+    max-width: 100%;
+    max-height: 140px;
+    min-height: 100px;
+    resize: vertical;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.form-join label select {
+    width: 100%;
+}
+
+
+.button-5 {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #fa6400;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.button-5:hover,
+.button-5:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+    transform: translateY(-1px);
+}
+
+.button-5:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+

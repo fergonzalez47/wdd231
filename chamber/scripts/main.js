@@ -14,3 +14,8 @@ if (grid && list) {
         document.getElementById("cards").classList.add("list");
     })
 }
+
+// timestamp
+if (document.getElementById("timestamp")) {
+    document.getElementById("timestamp").value = new Date().toISOString();
+}
