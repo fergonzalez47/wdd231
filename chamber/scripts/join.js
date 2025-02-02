@@ -22,49 +22,6 @@ const membershipDescription = document.getElementById("membership-description");
 
 
 
-// function DisplayCards(array) {
-//     membershipSection.innerHTML = "";
-
-//     const h2Title = document.createElement("h2");
-//     h2Title.textContent = "Membership Level";
-//     h2Title.classList.add("membership-container-title");
-//     membershipSection.appendChild(h2Title);
-
-//     array.forEach((item, index) => {
-//         setTimeout(() => {
-//             const div = document.createElement("div");
-//             const h2 = document.createElement("h2");
-//             const readMoreBtn = document.createElement("button");
-
-
-//             div.classList.add("membership-card");
-//             h2.classList.add("membership-card-title");
-//             readMoreBtn.classList.add("membership-card-btn", "button-56");
-
-
-//             h2.textContent = `${item.title}`;
-//             readMoreBtn.textContent = "Learn more";
-
-
-//             readMoreBtn.addEventListener("click", () => {
-//                 displayModal(item);
-//             });
-
-
-//             div.appendChild(h2);
-//             div.appendChild(readMoreBtn);
-
-
-//             membershipSection.appendChild(div);
-
-
-//             div.style.animation = `fadeInUp 0.5s ease-out forwards`;
-//         }, index * 400);
-//     });
-// }
-
-
-
 function DisplayCards(array) {
     membershipSection.innerHTML = "";
 
@@ -74,7 +31,7 @@ function DisplayCards(array) {
     membershipSection.appendChild(h2Title);
 
     array.forEach((item, index) => {
-     
+        setTimeout(() => {
             const div = document.createElement("div");
             const h2 = document.createElement("h2");
             const readMoreBtn = document.createElement("button");
@@ -100,8 +57,51 @@ function DisplayCards(array) {
 
             membershipSection.appendChild(div);
 
+
+            div.style.animation = `fadeInUp 0.5s ease-out forwards`;
+        }, index * 400);
     });
 }
+
+
+
+// function DisplayCards(array) {
+//     membershipSection.innerHTML = "";
+
+//     const h2Title = document.createElement("h2");
+//     h2Title.textContent = "Membership Level";
+//     h2Title.classList.add("membership-container-title");
+//     membershipSection.appendChild(h2Title);
+
+//     array.forEach((item, index) => {
+     
+//             const div = document.createElement("div");
+//             const h2 = document.createElement("h2");
+//             const readMoreBtn = document.createElement("button");
+
+
+//             div.classList.add("membership-card");
+//             h2.classList.add("membership-card-title");
+//             readMoreBtn.classList.add("membership-card-btn", "button-56");
+
+
+//             h2.textContent = `${item.title}`;
+//             readMoreBtn.textContent = "Learn more";
+
+
+//             readMoreBtn.addEventListener("click", () => {
+//                 displayModal(item);
+//             });
+
+
+//             div.appendChild(h2);
+//             div.appendChild(readMoreBtn);
+
+
+//             membershipSection.appendChild(div);
+
+//     });
+// }
 
 
 
