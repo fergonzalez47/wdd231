@@ -530,7 +530,7 @@ footer .footer-socialmedia ul {
     max-height: 200px;
     padding: 1rem;
     transition: 0.3s;
-    animation: fadeInUp 0.5s ease-out forwards;
+    animation: fadeInUp 1.3s ease-in-out forwards;
 }
 
 
