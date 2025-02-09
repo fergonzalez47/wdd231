@@ -7,19 +7,6 @@ console.log(urlSecondtPart);
 
 const displayResult = document.getElementById("display-result");
 
-// function show(cup) {
-//     urlSecondtPart.forEach((element) => {
-//         if (element.startsWith(cup)) {
-//             result = element.split("=")[1];
-//             result = result.replace("%2B", "");
-//             result = result.replace("%3a", " ");
-//             result = result.replace("+", " ");
-//             result = result.replace("%40", "@"); // esto reempleza el simbolo de arroba correo por arroba
-//         }
-//     })
-//     return (result);
-// }
-
 function show(cup) {
     let result;
     urlSecondtPart.forEach((element) => {

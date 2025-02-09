@@ -22,7 +22,6 @@ async function apiFetch(url) {
         }
 
         const data = await response.json();
-        console.log("Fetched Data:", data);
         return data;
 
     } catch (error) {
@@ -69,10 +68,6 @@ function displayForecast(list) {
 
     });
 }
-
-
-
-
 
 
 

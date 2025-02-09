@@ -605,6 +605,69 @@ dialog[open] {
  text-align: center;
 }
 
+
+
+
+
+
+
+/* discover.html */
+
+#places {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    
+}
+
+.place-card {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: rgb(232, 239, 248);
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: .5rem;
+    padding: .5rem;
+    transition: .2s all;
+}
+
+
+
+ .image-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+ .image-container img {
+     
+     width: 100%;
+     max-width: 300px;
+     max-height: 200px;
+ }
+
+ .place-description {
+    font-style: italic;
+    font-size: .8rem;
+ }
+
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+
+
+
 @keyframes fadeInUp {
     from {
         opacity: 0;

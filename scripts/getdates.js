@@ -1,17 +1,18 @@
+function DisplayDate() {
+    document.addEventListener("DOMContentLoaded", function () {
+        const displayYear = document.getElementById("currentYear");
+        const displayLastModified = document.getElementById("lastModified");
 
-document.addEventListener("DOMContentLoaded", function () {
-    const displayYear = document.getElementById("currentYear");
-    const displayLastModified = document.getElementById("lastModified");
+        const date = new Date();
 
-    const date = new Date();
+        displayYear.innerText = "";
+        displayYear.innerText = date.getFullYear();
 
-    displayYear.innerText = "";
-    displayYear.innerText = date.getFullYear();
+        displayLastModified.innerText = "";
+        displayLastModified.innerHTML = formatDate(date);
+    });
 
-    displayLastModified.innerText = "";
-    displayLastModified.innerHTML = formatDate(date);
-});
-
+}
 
 function formatDate(date) {
     const pad = (num) => (num < 10 ? '0' + num : num);
@@ -26,3 +27,6 @@ function formatDate(date) {
     const fullDate = `${year}/${month}/${day} ${hour}:${minute}:${second}`;
     return fullDate;
 }
+
+
+DisplayDate();

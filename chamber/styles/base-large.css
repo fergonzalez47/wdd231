@@ -6,31 +6,22 @@
     --color-warning: #f26419;
 
     /* fonts */
-
     --font-bangers: "Bangers", serif;
     --font-bangers-weight: 400;
-
     --font-montserrat: "Montserrat", serif;
-
-
     --font-hind: "Hind Mysuru", serif;
     --font-hind-weight: 400;
 }
 
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 641px) {
     /* FOOTER */
-
 
     footer {
         grid-template-columns: repeat(3, 1fr);
     }
 
-
-
-
     /* directory */
-
 
     .list .card {
         display: flex;
@@ -38,9 +29,6 @@
         /* Permite que los elementos bajen de línea cuando no haya espacio */
         gap: 15px;
         align-items: center;
-
-
-
     }
 
     .list .card>* {
@@ -80,6 +68,29 @@
     }
 
 
+
+
+
+
+
+
+
+    /* discover.html */
+
+    #places {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+
+    .place-card:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: white;
+    }
 
 
 }

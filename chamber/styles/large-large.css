@@ -1,0 +1,11 @@
+@media (min-width: 1024px) {
+
+
+    #places {
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 car5 card6"
+            "card7 card7 .";
+
+    }
+}

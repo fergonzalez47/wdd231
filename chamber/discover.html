@@ -8,14 +8,13 @@
         content="A website created by Fernando Gonzalez for Chamber of Commerce Site as part of the WDD231 course.">
     <meta name="author" content="Fernando Gonzalez">
     <!-- facebook -->
-    <meta property="og:url" content="https://fergonzalez47.github.io/wdd231/chamber/directory.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content=" Chamber of Commerce Maipu ">
-    <meta property="og:description"
-        content="The Chamber of Commerce of Maipú, Santiago, Chile, is an organization that supports the growth and development of local businesses, promoting trade and business collaboration.">
+    <meta property="og:url" content="https://fergonzalez47.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content=" Chamber of Commerce Maipu " />
+    <meta property="og:description" content="Local business discover page of The Chamber of Commerce of Maipú, Santiago." />
     <meta property="og:image"
         content="https://storage.googleapis.com/chile-travel-cdn/2021/08/Vitrina_Centro_santiago-1-1536x1025.jpg">
-    <title>Maipu - Chamber of Commerce</title>
+    <title>Discover - Maipu Chamber of Commerce</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,11 +25,10 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base-large.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large-large.css">
     <link rel="stylesheet" href="styles/header.css">
-    <script src="scripts/main.js" defer></script>
-    <script src="../scripts/getdates.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-
+    <script src="scripts/discover.js" type="module"></script>
+    <!-- <script src="../scripts/getdates.js" defer></script> -->
     <link rel="icon" href="images/favicon.ico">
 </head>
 
@@ -45,9 +43,9 @@
                 <span class='menu-button'></span>
             </label>
             <ul class="menu">
-                <li><a class="active-link" href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active-link" href="discover.html">Discover</a></li>
+                <li><a  href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
@@ -55,42 +53,16 @@
 
 
     <main>
+        <section class="section-btns">
+            <h1>Discover - Maipu Chamber of Commerce</h1>
+        </section>
+        
+        <section id="places">
 
-        <section class="hero">
-            <div class="hero-content">
-                <p>Connect with like-minded business owners. </p>
-                <a class="cta-btn"><span>Join now!</span></a>
-
-            </div>
         </section>
 
-        <section class="home">
-            <h1>Maipu - Chamber of Commerce</h1>
-            <div class="events">
-                <h2>Events</h2>
-                <p>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Aut rerum possimus est,
-                    repellat enim modi sunt aliquam beatae
-                    sapiente, illum voluptatem incidunt haru
-                    m? Dolorem placeat error autem. Error,
-                    fuga saepe.</p>
-            </div>
-            <div class="weather">
-                <h2>Current Weather</h2>
-                <figure>
-                    <img src="." alt="." id="weather-icon">
-                    <figcaption id="weather"></figcaption>
-                </figure>
-            </div>
-            <div class="forecast">
-                <h2>Weather Forecast</h2>
-                <div id="forecast"></div>
-            </div>
-        </section>
+        <div id="sidebar-message" class="sidebar"></div>
 
-        <section id="business-list">
-
-        </section>
 
     </main>
     <footer>
@@ -124,8 +96,9 @@
             <p>WDD231 Class Project</p>
             <p>Fernando Gonzalez</p>
             <p>©<span id="currentYear"></span> Maipu Chamber of Commerce</p>
-            <p>Last Modification: <span id="lastModified"></span></p>
+            <!-- <p>Last Modification: <span id="lastModified"></span></p> -->
         </div>
+        
 
     </footer>
 </body>
