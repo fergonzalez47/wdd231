@@ -29,10 +29,11 @@ function displayPlaces(places) {
 
 
         image.classList.add("place-image");
-        card.classList.add("place-card")
+        card.classList.add("place-card");
+        address.classList.add("place-address");
         description.classList.add("place-description");
         imageContainer.appendChild(image);
-        card.appendChild(imageContainer)
+        card.appendChild(imageContainer);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(description);

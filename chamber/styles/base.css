@@ -600,9 +600,10 @@ dialog[open] {
 }
 
 
-.custom-table th, .custom-table td  {
- border: 1px solid black;
- text-align: center;
+.custom-table th,
+.custom-table td {
+    border: 1px solid black;
+    text-align: center;
 }
 
 
@@ -617,7 +618,7 @@ dialog[open] {
     display: grid;
     gap: 1rem;
     justify-content: center;
-    
+
 }
 
 .place-card {
@@ -630,29 +631,44 @@ dialog[open] {
     gap: .5rem;
     padding: .5rem;
     transition: .2s all;
+    overflow: hidden;
+    grid-template-areas:
+        "name"
+        "image"
+        "location"
+        "description";
 }
 
 
-
- .image-container {
+.image-container {
     display: grid;
     justify-content: center;
     justify-items: center;
     text-align: center;
     width: 100%;
+    grid-area: image;
 }
 
- .image-container img {
-     
-     width: 100%;
-     max-width: 300px;
-     max-height: 200px;
- }
+.image-container img {
 
- .place-description {
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.place-card h3 {
+    grid-area: name;
+}
+
+.place-card .place-address {
+    grid-area: location;
+}
+
+.place-card .place-description {
     font-style: italic;
     font-size: .8rem;
- }
+    grid-area: description;
+}
 
 .sidebar {
     background-color: #f8f9fa;

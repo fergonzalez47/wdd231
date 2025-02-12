@@ -69,21 +69,16 @@
 
 
 
-
-
-
-
-
-
     /* discover.html */
 
-    #places {
-        grid-template-areas:
-            "card1 card2"
-            "card3 card4"
-            "card5 card6"
-            "card7 card8";
-    }
+.place-card {
+    align-items: center;
+    align-content: center;
+    grid-template-areas:
+        "image name"
+        "image location"
+        "image description";
+}
 
 
     .place-card:hover {
