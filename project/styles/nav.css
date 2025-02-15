@@ -1,0 +1,232 @@
+:root {
+  --color-black: #000000;
+  --color-gold: #dfa62b;
+  --color-gray: #a09cb0;
+  --color-light-blue: #a3b9c9;
+  --color-light-cyan: #bae6ec;
+
+  /* fonts */
+
+  --font-bangers: "Bangers", serif;
+  --font-bangers-weight: 400;
+
+  --font-montserrat: "Montserrat", serif;
+
+
+  --font-hind: "Hind Mysuru", serif;
+  --font-hind-weight: 400;
+}
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+.navbar {
+  background: var(--color-black);
+  height: 100px;
+  width: 100%;
+  z-index: 600;
+}
+
+
+#logo {
+  width: 100%;
+  max-width: 100px;
+}
+
+.navbar label.logo {
+  color: var(--color-light-cyan);
+  /* font-size: 25px; */
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+
+.navbar ul {
+  float: right;
+  margin-right: 20px;
+  z-index: 600;
+}
+
+.navbar ul li {
+  display: inline-block;
+  line-height: 100px;
+  margin: 0 5px;
+}
+
+.navbar ul li a {
+  color: var(--color-light-cyan);
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  background: var(--color-gold);
+  color: var(--color-black);
+  transition: .5s;
+  cursor: pointer;
+}
+
+
+.checkbtn {
+  font-size: 24px;
+  color: var(--color-light-cyan);
+  float: right;
+  line-height: 100px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .navbar label.logo {
+    padding-left: 30px;
+  }
+
+  .navbar .navbar ul li a {
+    font-size: 16px;
+  }
+}
+
+/* Responsive media query code for small screen */
+@media (max-width: 890px) {
+  .navbar .checkbtn {
+    display: block;
+  }
+
+  .navbar label.logo {
+    font-size: 22px;
+  }
+
+  .navbar ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-gold);
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin: 40px 0;
+    line-height: 30px;
+  }
+
+  .navbar ul li a {
+    font-size: 22px;
+    color: var(--color-black);
+  }
+
+  .navbar a:hover,
+  .navbar a.active {
+    background-color: var(--color-black);
+    color: var(--color-light-cyan);
+    cursor: pointer;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+
+.hero-main {
+  padding: 0;
+  background: url("../public/images/hero-cs2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 100px);
+}
+
+.hero-main .hero-glass {
+  width: 100%;
+  height: 100%;
+  background-color: #dfa62b36;
+}
+
+
+.hero-glass {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  max-height: 100vh;
+  overflow: hidden;
+
+}
+
+
+
+.hero-glass-content {
+  max-width: 95%;
+  max-height: 95%;
+  overflow: auto;
+  padding: .5rem;
+  text-align: center;
+  background: rgba(3, 3, 3, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+
+}
+
+.hero-glass-content h1 {
+  font-size: clamp(1.1rem, 4vw, 3rem);
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  /* letter-spacing: 1px; */
+}
+
+.hero-glass-content .hero-branchname {
+  color: var(--color-light-cyan);
+  font-weight: 700;
+}
+
+.hero-glass-content p {
+  font-size: clamp(.8rem, 1.8vw, 2rem);
+  /* line-height: 1.6; */
+  margin-bottom: 20px;
+}
+
+.hero-glass-content .btn {
+  display: inline-block;
+  padding: 12px 18px;
+  font-size: clamp(.8rem, 2vw, 2rem);
+  font-weight: bold;
+  text-transform: uppercase;
+  background: var(--color-gold);
+  /* Color llamativo */
+  color: var(--color-black);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.hero-glass-content .btn:hover {
+  background: var(--color-light-cyan);
+}

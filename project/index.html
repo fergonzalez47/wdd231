@@ -1,126 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/project.css">
-    <link rel="stylesheet" href="styles/project-large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Fernando Gonzalez">
+  <meta name="description"
+    content="We provide professional cleaning services for homes, offices, and furniture. 
+    Deep cleaning solutions and regular maintenance with guaranteed quality. Contact us today and let’s talk about your cleaning needs!">
 
-    <title>Project Site Plan- WDD231 - Fernando Gonzalez</title>
-    <script src="../scripts/getdates.js" defer></script>
-    <link rel="icon" href="images/favicon.ico">
+  <!-- Facebook Open Graph -->
+  <meta property="og:url" content="https://cleaningsolution.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cleaning Solution - Professional Cleaning Services">
+  <meta property="og:description" content="We offer high-quality cleaning services for homes, offices, and furniture. 
+    Deep cleaning and regular maintenance to keep your space spotless. Contact us today!">
+  <meta property="og:image" content="https://yourwebsite.com/your-image.jpg">
+
+  <title>Cleaning Solution - Professional Cleaning Services</title>
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/base.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="icon" href="public/favicon/favicon.ico">
 </head>
 
 <body>
-    <header>
+  <nav class="navbar">
+    <!-- Checkbox for toggling menu -->
+    <input type="checkbox" id="check">
 
-        <div class="presentation">
+    <!-- Menu icon -->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
 
-            <h1>Cleaning Solution</h1>
+    <!-- Site logo -->
+    <label class="logo"><a href="index.html"><img id="logo" src="public/images/cslogo.jpg"
+          alt="business logo"></a></label>
 
+    <!-- Navigation links -->
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about/index.html">About</a></li>
+      <li><a href="services/index.html">Services</a></li>
+      <li><a href="contact/index.html">Contact</a></li>
+      <!-- <li><a href="#">Feedback</a></li> -->
+    </ul>
+  </nav>
+
+
+  <main>
+    <!-- Section for image -->
+    <section class="hero-main">
+      <div class="hero-glass">
+        <div class="hero-glass-content">
+          <h1><span class="hero-branchname"> Cleaning Solution</span> | Professional Cleaning Services</h1>
+          <p>Experts in <strong>home, office, and furniture cleaning</strong>.
+            From <strong>deep cleaning</strong> to routine maintenance, we ensure your space stays fresh and spotless.
+          </p>
+          <a href="contact/index.html" class="btn">Contact Cleaning Solution</a>
         </div>
-        <nav>
-            <ul class="navigation">
-                <li><a href="/" title="Home">Home</a></li>
-                <li><a href="../chamber/index.html" title="Chamber">Chamber</a></li>
-                <li><a href="https://github.com/fergonzalez47" title="GitHub Profile">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/fergonzalez-valdez/" title="LinkedIn">LinkedIn</a></li>
+      </div>
 
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h2>Website Name: Cleaning Solution</h2>
-        <section>
-            <h3>Logo:</h3>
-            <img width="200px" height="200px" src="../images/cslogo.jpg" alt="Cleaning solution logo">
-        </section>
-
-
-        <section>
-            <h3>Site Purpose:</h3>
-            <p>
-
-                The website will serve as a platform for customers interested in professional home and
-                office cleaning services. It will provide detailed information on services offered, pricing
-                options(optional) and allow users to
-                schedule appointments online. It will also include a contact section for direct inquiries and a
-                testimonials page to
-                reinforce the credibility of the business <i>(in the future)</i>.
-            </p>
-        </section>
-        <br>
-        <section>
-            <ul>
-                <li>
-                    <h4>How can I book a cleaning service for my office or home?</h4>
-                    <p>I will respond with a clear process for how users can schedule
-                        a service using the online booking form or Phone.</p>
-                </li>
-                <li>
-                    <h4>What type of products and techniques do you use to clean furniture and floors?</h4>
-                    <p>Information will be included on the cleaning methods used, highlighting
-                        ecological or specialized practices in the care
-                        of different materials.</p>
-                </li>
-                <li>
-                    <h4>How much does a cleaning service cost for a 3-bedroom house?</h4>
-                    <p>A pricing table or form will be provided to obtain a custom quote based on the size of the space
-                        and services required.</p>
-                </li>
-                <li>
-                    <h4>Do you offer deep cleaning services or just regular maintenance?</h4>
-                    <p>The website will explain the difference between both services and the options available,
-                        including deep cleaning for moves,
-                        post-construction, specialized sanitation, etc.</p>
-                </li>
-                <li>
-                    <h4>Do you offer recurring cleaning plans for offices or businesses?</h4>
-                    <p>
-                        Scheduled cleaning packages for offices and businesses will be described, including discounts
-                        for monthly subscriptions
-                    </p>
-                </li>
-            </ul>
-        </section>
-        <section class="color-section">
-            <h3>Color Schema:</h3>
-            <p>Option 1: <a href="https://coolors.co/000000-dfa62b-a09cb0-a3b9c9-abdae1"><img width=""
-                        src="../images/cs/colorop1.png" alt="color palette"></a></p>
-
-            <p>Option 2: <a href="https://coolors.co/000000-ff0000-ffffff-ffcc00-ff6600"><img
-                        src="../images/cs/colorop2.png" alt="color palette"></a></p>
-
-        </section>
-
-        <section>
-            <h3>Typography:</h3>
-            <p>Primary Font: <a href="https://fonts.google.com/specimen/DM+Serif+Display">DM Serif Display</a></p>
-            <p>Secondary Font: <a href="https://fonts.google.com/specimen/DM+Sans">DM Sans</a></p>
-
-            <p></p>
-        </section>
+    </section>
+<section class="contact-options">
+  <div class="contact-box">
+    <p>Call For Service</p>
+    <a href="tel:+15551234567">📞 (555) 123-4567</a>
+  </div>
+  
+  <div class="contact-box">
+    <p>Chat on WhatsApp</p>
+    <a href="https://wa.me/15551234567" target="_blank">💬 WhatsApp</a>
+  </div>
+  
+  <div class="contact-box">
+    <p>Send an Email</p>
+    <a href="mailto:info@example.com">📧 info@example.com</a>
+  </div>
+</section>
 
 
-        <section>
-            <h3>Wireframe:</h3>
-            <img src="../images/cs/wr1.png" alt="wireframe for desktop">
-            <img src="../images/cs/wr2.png" alt="wireframe for mobile">
-        </section>
-    </main>
-    <footer>
-        <div class="footer-dev">
-            <p>©<span id="currentYear"></span> - Developed by Fernando Gonzalez | Santiago de Chile</p>
-            <img src="../images/chile.png" alt="chile flag">
-            <p>Last modified: <span id="lastModified"></span></p>
-        </div>
-    </footer>
+  </main>
+
+  <footer>
+    <div class="footer-inf">
+      <h4>Cleaning Solution</h4>
+      <p>123 Main Street, Springfield, IL 62701, USA</p>
+      <p>456 Elm Avenue, Anytown, CA 90210, USA</p>
+      <p>info@cleaningsolution.us</p>
+      <p>📞 (555) 123-4567</p>
+    </div>
+    <div class="footer-socialmedia">
+      <ul>
+        <li>
+          <a target="_blank" href="ttps://www.linkedin.com/in/fergonzalez-valdez/">
+            <img src="public/images/icon-linkedin.svg" alt="LinkedIn icon">
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://web.facebook.com/fer.shinoda.7">
+            <img src="public/images/icon-facebook.svg" alt="Facebook icon">
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.youtube.com/@FernandoGonzalez-pv2zp">
+            <img src="public/images/icon-youtube.svg" alt="Youtube icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-dev">
+      <!-- <p>Fernando Gonzalez</p> -->
+      <p>©<span id="currentYear"> 2025</span> Cleaning Solution</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+
+  </footer>
 </body>
 
 </html>
