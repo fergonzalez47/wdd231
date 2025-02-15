@@ -213,7 +213,7 @@
   margin-bottom: 20px;
 }
 
-.hero-glass-content .btn {
+.hero-glass-content .btn, .final-contact {
   display: inline-block;
   padding: 12px 18px;
   font-size: clamp(1rem, 2vw, 2rem);
@@ -227,6 +227,6 @@
   transition: background 0.3s ease-in-out;
 }
 
-.hero-glass-content .btn:hover {
+.hero-glass-content .btn:hover, .final-contact {
   background: var(--color-light-cyan);
 }

@@ -1,0 +1,52 @@
+:root {
+    --color-black: #000000;
+    --color-gold: #dfa62b;
+    --color-gray: #a09cb0;
+    --color-light-blue: #a3b9c9;
+    --color-light-cyan: #abdae1;
+}
+
+@media screen and (min-width: 621px) {
+
+    section:not(.hero-main) {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+
+    .key-feature-item p {
+        grid-row: 2 / 3;
+        margin-left: 1.25rem;
+    }
+
+
+
+    .main-why-choose h2,
+    .main-our-services h2,
+    .main-trusted-experts h2 {
+        grid-row: 2 / 3;
+
+    }
+
+    .main-img {
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(83% 0, 100% 50%, 84% 100%, 0% 100%, 0 52%, 0% 0%);
+    }
+
+    .main-img img {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    #key-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .key-feature-item p {
+        transform: scale(.9);
+    }
+}

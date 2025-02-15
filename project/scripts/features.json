@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "title": "Reliable & Professional Service",
+      "description": "Expert cleaning with attention to detail and punctuality.",
+      "icon": "./public/images/icon1.svg"
+    },
+    {
+      "title": "Eco-Friendly Products",
+      "description": "Safe, green cleaning solutions for your home and office.",
+      "icon": "./public/images/icon2.svg"
+    },
+    {
+      "title": "Affordable Pricing",
+      "description": "High-quality cleaning at fair and competitive rates.",
+      "icon": "./public/images/icon3.svg"
+    },
+    {
+      "title": "Customized Cleaning Plans",
+      "description": "Tailored cleaning schedules to meet your needs.",
+      "icon": "./public/images/icon4.svg"
+    },
+    {
+      "title": "Satisfaction Guarantee",
+      "description": "If you're not happy, we'll re-clean at no cost.",
+      "icon": "./public/images/icon5.svg"
+    },
+    {
+      "title": "Fast & Secure Service",
+      "description": "Efficient cleaning with safety and care in mind.",
+      "icon": "./public/images/icon6.svg"
+    }
+  ]
+}

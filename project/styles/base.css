@@ -39,6 +39,119 @@ body {
 }
 
 
+
+/* cta-ttn */
+
+
+/* Estilos comunes para todos los botones */
+.cta-button,
+.cta-2,
+.cta-3 {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    border-radius: 6px;
+    margin-top: 1.25rem;
+}
+
+.cta-button::after,
+.cta-2::after,
+.cta-3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Estilos únicos para cada botón */
+
+/* .cta-button */
+.cta-button {
+    color: var(--color-black);
+    background-color: transparent;
+    border: 2px solid var(--color-gold);
+}
+
+.cta-button::after {
+    background-color: var(--color-gold);
+}
+
+.cta-button:hover {
+    color: var(--color-gold);
+    border-color: white;
+}
+
+.cta-button:hover::after {
+    width: 100%;
+}
+
+.cta-button:active {
+    transform: scale(0.98);
+}
+
+/* .cta-2 */
+.cta-2 {
+    color: var(--color-gold);
+    background-color: transparent;
+    border: 2px solid var(--color-gold);
+}
+
+.cta-2::after {
+    background-color: var(--color-light-cyan);
+}
+
+.cta-2:hover {
+    color: var(--color-light-cyan);
+    border-color: var(--color-black);
+}
+
+.cta-2:hover::after {
+    width: 100%;
+}
+
+.cta-2:active {
+    transform: scale(0.98);
+}
+
+/* .cta-3 */
+.cta-3 {
+    color: var(--color-black);
+    background-color: var(--color-light-cyan);
+    border: 2px solid var(--color-black);
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 300px;
+}
+
+.cta-3::after {
+    background-color: var(--color-black);
+}
+
+.cta-3:hover {
+    background-color: var(--color-gray);
+    color: var(--color-black);
+    border-color: var(--color-gold);
+}
+
+.cta-3:hover::after {
+    width: 100%;
+}
+
+.cta-3:active {
+    transform: scale(0.98);
+}
+
+
+
 /* /main */
 
 
@@ -53,7 +166,7 @@ body {
 }
 
 .contact-box {
-    
+
     background: var(--color-black);
     padding: .8rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -79,18 +192,136 @@ body {
     color: var(--color-gold)
 }
 
+.main-img {
+    width: 100%;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main-img img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* icons */
+
+.main-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.main-why-choose,
+.main-our-services,
+.main-trusted-experts {
+    display: grid;
+}
 
 
 
 
+.main-why-choose h2,
+.main-our-services h2,
+.main-trusted-experts h2 {
+    color: var(--color-gold);
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    text-shadow: 1px 1px 1px #686666;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+#key-features {
+    display: grid;
+    margin: 1rem 0;
+}
+
+
+
+.key-feature-item {
+
+    display: grid;
+    align-content: start;
+    grid-template-columns: 1fr 8fr;
+    column-gap: .3rem;
+    justify-content: space-between;
+
+}
+
+.key-feature-item p {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+
+    line-height: 1.0;
+
+}
+
+.main-why-choose h3,
+.main-our-services h3,
+.main-trusted-experts h3 {
+    font-family: "DM Sans", serif;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-weight: 500;
+    line-height: 1.0;
+    display: inline-block;
+
+}
+
+body ul {
+    list-style: none;
+}
+
+
+section {
+    padding: 1rem;
+
+}
+
+.main-our-services .services-container {
+    margin: 1rem 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.main-our-services h3 {
+    border-bottom: 3px solid var(--color-gray);
+    padding-bottom: .2rem;
+    border-width: 50%;
+}
+
+
+.main-trusted-experts {
+
+    background-color: var(--color-black);
+    height: auto;
+    padding: 3rem;
+
+}
+
+
+
+.main-trusted-experts-p {
+    color: white;
+}
 
 
 
 
+.final-contact-container {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    display: grid;
+    justify-content: space-around;
 
+}
 
+.final-contact-container a {
+    text-align: center;
 
-
+}
 
 
 /* FOOTER */
@@ -121,21 +352,4 @@ footer .footer-socialmedia ul {
     justify-content: center;
     flex-wrap: wrap;
     gap: .5rem;
-}
-
-
-
-
-
-
-
-
-section {
-    padding: 1rem;
-    text-align: center;
-
-}
-
-body ul {
-    list-style: none;
 }
