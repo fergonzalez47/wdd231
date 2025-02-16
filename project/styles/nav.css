@@ -56,7 +56,7 @@
 .navbar ul {
   float: right;
   margin-right: 20px;
-  z-index: 600;
+  z-index: 1;
 }
 
 .navbar ul li {
