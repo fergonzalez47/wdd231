@@ -177,7 +177,8 @@ main .Whatsapp-floating-chat {
 .contact-options {
     display: grid;
     align-content: start;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    /* grid-template-columns: 1fr 1fr; */
     gap: 20px;
     padding: 20px;
     text-align: center;
