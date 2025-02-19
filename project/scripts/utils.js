@@ -50,3 +50,49 @@ export function displayServices(services, container) {
         container.appendChild(serviceElement);
     });
 }
+
+
+
+export function inputPhoneNumber() {
+
+    document.getElementById('phone').addEventListener('input', function (e) {
+        let value = e.target.value.replace(/\D/g, ''); // delete excess of characters
+        if (value.length > 10) value = value.slice(0, 10); // Máx 10 dígits
+
+        let formattedValue = '';
+        if (value.length > 6) {
+            formattedValue = `(${value.slice(0, 3)}) ${value.slice(3, 6)}-${value.slice(6)}`;
+        } else if (value.length > 3) {
+            formattedValue = `(${value.slice(0, 3)}) ${value.slice(3)}`;
+        } else if (value.length > 0) {
+            formattedValue = `(${value}`;
+        }
+
+        e.target.value = formattedValue;
+    });
+
+}
+
+
+
+
+export function displayModal(card, htmlElement) {
+    htmlElement.innerHTML = "";
+    htmlElement.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${card.title}</h2>
+    <p>${card.description}</p>
+    `;
+
+    htmlElement.showModal();
+
+    document.getElementById("closeModal").addEventListener("click", () => {
+        htmlElement.classList.add("closing");
+        setTimeout(() => {
+            htmlElement.close();
+            htmlElement.classList.remove("closing");
+        }, 350);
+    });
+
+
+}

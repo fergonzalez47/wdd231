@@ -66,7 +66,11 @@ function displayWeather(data) {
     const tempUnit = units === "metric" ? "°C" : "°F";
     const windUnit = units === "metric" ? "m/s" : "mph";
 
+    const cityName = data.name;
+    const country = data.sys.country;
+
     weather.innerHTML = `
+        <h3>${cityName}, ${country}</h3>
         <p>Temperature: ${data.main.temp}${tempUnit}</p>
         <p>${data.weather[0].description}</p>
         <p>Wind Speed: ${data.wind.speed} ${windUnit}</p>

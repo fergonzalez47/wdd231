@@ -49,4 +49,18 @@
     .key-feature-item p {
         transform: scale(.9);
     }
+
+
+    /* contact.html */
+
+
+    .welcome-join p {
+        margin: 0 auto;
+        width: 75%;
+        line-height: 1.4;
+    }
+
+    .form {
+        justify-self: center;
+    }
 }

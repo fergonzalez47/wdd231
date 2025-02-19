@@ -35,6 +35,13 @@
   width: 100%;
   z-index: 600;
   position: fixed;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+}
+
+.navbar.hidden {
+  top: -100px;
+  /* Oculta el navbar desplazándolo hacia arriba */
 }
 
 
@@ -156,7 +163,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
 }
 
 .hero-main .hero-glass {

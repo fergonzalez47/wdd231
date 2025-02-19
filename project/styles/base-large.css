@@ -74,4 +74,20 @@
     }
 
 
+
+/* contact */
+
+.section-form {
+    grid-template-columns: 1fr 1fr;
+} 
+
+
+
+/* about */
+
+
+.about-grid-container {
+    grid-template-columns: 1fr 1fr;
+}
+
 }

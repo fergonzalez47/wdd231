@@ -176,12 +176,13 @@ main .Whatsapp-floating-chat {
 
 
 .contact-options {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    align-content: start;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
     text-align: center;
+    align-items: start;
 }
 
 .contact-box {
@@ -242,7 +243,7 @@ main .Whatsapp-floating-chat {
 
 
 
-.main-icon {
+.main-icon, .service-card img {
     width: 36px;
     height: 36px;
 }
@@ -258,15 +259,26 @@ main .Whatsapp-floating-chat {
 
 .main-why-choose h2,
 .main-our-services h2,
-.main-trusted-experts h2 {
-    color: var(--color-gold);
+.main-trusted-experts h2,
+.container-why-choose h2 {
+    border-left: 3px solid var(--color-gold);
+    padding-left: .25rem;
     grid-row: 2 / 3;
     font-size: clamp(1.7rem, 3vw, 2.4rem);
-    text-shadow: 1px 1px 1px #686666;
+
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+}
 
+.main-trusted-experts h2 {
+    color: var(--color-gold);
+    text-shadow: 1px 1px 1px #ffffff;
+}
 
+.main-why-choose h2,
+.main-our-services h2 {
+    color: var(--color-black);
+    text-shadow: 1px 1px 1px #0000008f;
 }
 
 #key-features {
@@ -393,6 +405,479 @@ footer .footer-socialmedia ul {
 
 
 
+/* COINTACT EDIT!! */
+/*  */
+
+
+.section-join-welcome h1 {
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+}
+
+
+.welcome-join {
+    margin: 2.75rem auto;
+}
+
+
+
+
+.form {
+    background-color: #aea6d118;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+.form label {
+    display: grid;
+    color: var(--color-primary);
+    margin-bottom: .125rem;
+
+}
+
+.form label input {
+    box-sizing: border-box;
+    margin-left: .25rem;
+    margin-top: .25rem;
+    border: 1px solid var(--color-gray);
+    outline: none;
+    width: 100%;
+    border-radius: 8px;
+    height: 52px;
+    transition: 0.3s;
+    padding: .8rem .5rem .5rem .5rem;
+}
+
+.form label input:focus {
+    box-sizing: border-box;
+    border: 2px solid var(--color-gold);
+
+}
+
+.form label textarea {
+    width: 100%;
+    max-width: 100%;
+    max-height: 140px;
+    min-height: 100px;
+    border-radius: 8px;
+    resize: vertical;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: .75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: .25rem;
+}
+
+.form h2 {
+    text-align: center;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+
+
+}
+
+.form label i {
+    transform: scale(.9);
+    color: rgb(85, 81, 81);
+}
+
+
+.button-5 {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: var(--color-gold);
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: var(--color-black);
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.button-5:hover,
+.button-5:focus {
+    background-color: var(--color-light-cyan);
+
+    box-shadow: rgba(50, 100, 80, 0.5) 0 8px 14px;
+}
+
+.button-5:hover {
+    transform: translateY(-1px);
+}
+
+.button-5:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+
+
+/* join.html */
+
+.section-form {
+    display: grid;
+    row-gap: 1rem;
+    padding-top: 4rem;
+}
+
+
+#contact-section {
+    display: grid;
+    gap: 1rem;
+}
+
+
+
+/* maps */
+
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 170px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 170px;
+}
+
+.gmap_iframe {
+    height: 170px !important;
+}
+
+
+
+
+
+/* thanskypu.html */
+
+
+.main-thankyou {
+    margin-top: 100px;
+}
+
+/* Estilos comunes para todos los botones */
+.contact-whatsapp-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    border-radius: 6px;
+    margin-top: 1.25rem;
+}
+
+.contact-whatsapp-btn ::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    transition: width 0.2s ease-in-out;
+}
+
+.contact-whatsapp-btn {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-black);
+    background-color: transparent;
+    border: 2px solid #075e54;
+}
+
+.contact-whatsapp-btn::after {
+    background-color: #25d366;
+}
+
+.contact-whatsapp-btn:hover {
+    color: #075e54;
+    border-color: #25d366;
+}
+
+.contact-whatsapp-btn:hover::after {
+    width: 100%;
+}
+
+.contact-whatsapp-btn:active {
+    transform: scale(0.98);
+}
+
+
+.contact-whatsapp-btn svg {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* dialog */
+
+
+
+
+dialog {
+    margin: 1rem auto;
+    top: 30%;
+    border: 1px solid rgba(172, 170, 170, 0.685);
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 90%;
+    max-width: 500px;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    opacity: 0;
+    transform: scale(0.8);
+    z-index: 800;
+}
+
+::backdrop {
+    background-color: rgba(61, 58, 78, 0.514);
+}
+
+
+dialog p,
+dialog h2 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+dialog h2 {
+    margin: .2rem auto .6rem auto;
+    color: var(--color-secondary);
+
+}
+
+
+
+dialog button {
+    position: absolute;
+    top: 1.4rem;
+    right: 1.6rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+dialog[open] {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+dialog.closing {
+    animation: fadeOut 0.2s ease-in forwards;
+}
+
+
+/* btn 56 */
+
+
+
+.button-56 {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid var(--);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    height: 40px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-56:after {
+    background-color: var(--color-light);
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 40px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(6px, 6px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button-56:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+.button-56:hover {
+    outline: 0;
+}
+
+
+.service-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid var(--color-gold);
+    border-radius: 10px;
+    max-height: 200px;
+    padding: 1rem;
+    transition: 0.3s;
+    animation: fadeInUp 1.3s ease-in-out forwards;
+}
+
+/* about */
+
+
+
+.about-grid-container {
+    display: grid;
+}
+
+.container-hero-about {
+    margin-top: 80px;
+    padding: 0;
+    background: url("../public/images/about.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(80vh);
+
+}
+
+.about-content {
+    grid-column: 1/-1;
+    grid-row: 1 / 2;
+}
+
+.container-hero-about>div {
+    color: white;
+    background-color: #00000098;
+    height: 100%;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    padding: 1.4rem;
+}
+
+.container-hero-about>div h2 {
+    font-size: clamp(1.7rem, 4vw, 3.4rem);
+    color: #e0b453;
+    font-weight: 500;
+    text-shadow: 1px 10px 12px #000000;
+}
+
+.container-hero-about>div p {
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-weight: 500;
+    width: 100%;
+    max-width: 650px;
+    text-shadow: -2px 8px 6px #000000;
+
+}
+
+.about-values>div, .container-why-choose>div {
+    margin: .75rem 0;
+}
+
+.about-values h3 {
+    color: #86651c;
+    font-weight: 600;
+    font-family: "DM Sans", serif;
+}
+
+.about-values p {
+    font-weight: 400;
+
+}
+
+
+.container-why-choose ul {
+    margin-left: .45rem;
+
+}
+
+.container-why-choose ul li {
+    margin: .25rem 0;
+
+}
+
+.link {
+    color: blue;
+
+    transition: .2s;
+}
+
+.link:hover {
+    color: var(--color-gold);
+}
+
+
+
+.link:active {
+    color: blue;
+}
+
+
+
+
+/* services */
+
+
+#services {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+
+
+/* dialog */
+
+
+
+
+
+
 @keyframes heartbeat {
 
     0%,
@@ -404,4 +889,40 @@ footer .footer-socialmedia ul {
         transform: scale(1.1);
     }
 
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
 }
