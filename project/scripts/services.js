@@ -50,33 +50,25 @@ const services = [
 
 
 
-
 export function renderServices() {
     const servicesContainer = document.getElementById('services');
-    
-    const dialog = document.getElementById('service-description'); 
+    const dialog = document.getElementById('service-description');
 
     services.forEach(service => {
         const serviceCard = document.createElement('div');
         serviceCard.classList.add('service-card');
 
         serviceCard.innerHTML = `
-        <img src="${service.icon}" alt="${service.title} icon">
-        <h3>${service.title}</h3>
-    `;
-        const readBtn = document.createElement("button");
-        readBtn.classList.add("see-service-btn");
-        readBtn.textContent = "See";
-        readBtn.classList.add("button-56");
+            <div class="service-content">
+                <img src="${service.icon}" alt="${service.title} icon">
+                <h3>${service.title}</h3>
+            </div>
+            <button class="see-service-btn button-56">See</button>
+        `;
 
-
-        readBtn.addEventListener("click", () => {
+        serviceCard.querySelector(".see-service-btn").addEventListener("click", () => {
             displayModal(service, dialog);
-            console.log("click here");
         });
-
-        serviceCard.appendChild(readBtn);
-
 
         servicesContainer.appendChild(serviceCard);
     });

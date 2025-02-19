@@ -244,8 +244,8 @@ main .Whatsapp-floating-chat {
 
 
 .main-icon, .service-card img {
-    width: 36px;
-    height: 36px;
+    width: 24x;
+    height: 24px;
 }
 
 .main-why-choose,
@@ -747,11 +747,38 @@ dialog.closing {
 .button-56:hover {
     outline: 0;
 }
-
-
 .service-card {
     display: flex;
+    flex-direction: column;
+    /* Asegura que el botón esté debajo */
+    align-items: center;
+    /* Centra los elementos */
+    width: 100%;
+    max-width: 250px;
+    border: 2px solid var(--color-light-cyan);
+    background-color: var();
+    border-radius: 10px;
+    padding: 1rem;
+    transition: 0.3s;
+    animation: fadeInUp 1.3s ease-in-out forwards;
+}
+
+/* Contenedor para la imagen y el título */
+.service-content {
+    display: flex;
+    align-items: center;
+    /* Mantiene la imagen y el título alineados */
+    gap: 0.5rem;
+    /* Espacio entre imagen y título */
+    width: 100%;
+    /* Para evitar que el texto baje */
+}
+
+
+/* .service-card {
+    display: flex;
     flex-wrap: wrap;
+    
     width: 100%;
     max-width: 250px;
     border: 1px solid var(--color-gold);
@@ -760,7 +787,7 @@ dialog.closing {
     padding: 1rem;
     transition: 0.3s;
     animation: fadeInUp 1.3s ease-in-out forwards;
-}
+} */
 
 /* about */
 
@@ -864,8 +891,9 @@ dialog.closing {
 
 #services {
     display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    row-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 
 }
 
