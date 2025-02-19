@@ -32,7 +32,6 @@ h6 {
 
 body {
     font-family: "DM Sans", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: #383838;
@@ -244,7 +243,7 @@ main .Whatsapp-floating-chat {
 
 
 .main-icon, .service-card img {
-    width: 24x;
+    width: 24px;
     height: 24px;
 }
 
@@ -337,7 +336,6 @@ section {
 .main-our-services h3 {
     border-bottom: 3px solid var(--color-gray);
     padding-bottom: .2rem;
-    border-width: 50%;
 }
 
 
@@ -756,7 +754,6 @@ dialog.closing {
     width: 100%;
     max-width: 250px;
     border: 2px solid var(--color-light-cyan);
-    background-color: var();
     border-radius: 10px;
     padding: 1rem;
     transition: 0.3s;
