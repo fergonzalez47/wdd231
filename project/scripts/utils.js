@@ -67,12 +67,10 @@ export function inputPhoneNumber() {
         } else if (value.length > 0) {
             formattedValue = `(${value}`;
         }
-
         e.target.value = formattedValue;
     });
 
 }
-
 
 
 
