@@ -406,7 +406,9 @@ footer .footer-socialmedia ul {
 /* COINTACT EDIT!! */
 /*  */
 
-
+.main-join {
+    margin-top: 2rem;
+}
 .section-join-welcome h1 {
     font-size: clamp(2.2rem, 4vw, 3.4rem);
 }
