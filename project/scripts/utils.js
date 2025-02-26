@@ -94,3 +94,43 @@ export function displayModal(card, htmlElement) {
 
 
 }
+
+
+
+
+// display icons in home
+
+
+export function createIconElement(service) {
+    const div = document.createElement("div");
+    div.classList.add("icon-service-card");
+
+    const title = document.createElement("h5");
+    title.textContent = service.title;
+
+    const iconContainer = document.createElement("div");
+    iconContainer.classList.add("icon-services-container");
+
+    const icon = document.createElement("img");
+    icon.setAttribute("src", service.icon);
+    icon.setAttribute("alt", `image of ${service.title}`);
+    icon.setAttribute("loading", "lazy");
+    icon.classList.add("home-services-icon");
+
+    div.addEventListener("click", () => {
+        window.location.href = "./services/";
+    })
+
+    iconContainer.appendChild(icon);
+    div.appendChild(iconContainer);
+    div.appendChild(title);
+
+    return div;
+}
+
+export function displayIconsServices(services, container) {
+    services.forEach(function (service) {
+        const serviceElement = createIconElement(service);
+        container.appendChild(serviceElement);
+    });
+}

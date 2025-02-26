@@ -16,7 +16,7 @@
       "icon": "./public/images/icon3.svg"
     },
     {
-      "title": "Customized Cleaning Plans",
+      "title": "Customized Solutions",
       "description": "Tailored cleaning schedules to meet your needs.",
       "icon": "./public/images/icon4.svg"
     },
@@ -29,6 +29,32 @@
       "title": "Fast & Secure Service",
       "description": "Efficient cleaning with safety and care in mind.",
       "icon": "./public/images/icon6.svg"
+    }
+  ],
+  "iconServices": [
+    {
+      "title": "Air Duct Cleaning",
+      "icon": "./public/images/home-icons/ducto.svg"
+    },
+    {
+      "title": "Tile & Grout Cleaning",
+      "icon": "./public/images/home-icons/tile.svg"
+    },
+    {
+      "title": "Dryer Vent Cleaning",
+      "icon": "./public/images/home-icons/dryerduct.svg"
+    },
+    {
+      "title": "Junk Removal",
+      "icon": "./public/images/home-icons/junkremoval.svg"
+    },
+    {
+      "title": "Floor Cleaning",
+      "icon": "./public/images/home-icons/floorcleaning.svg"
+    },
+    {
+      "title": "Water Damage Cleanup",
+      "icon": "./public/images/home-icons/water-damage.svg"
     }
   ]
 }
