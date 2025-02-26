@@ -25,7 +25,6 @@ h4,
 h5,
 h6 {
     font-family: "DM Serif Display", serif;
-    font-weight: 400;
     font-style: normal;
 }
 
@@ -260,8 +259,8 @@ main .Whatsapp-floating-chat {
 
 .main-icon,
 .service-card img {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
 }
 
 .main-why-choose,
@@ -308,18 +307,20 @@ main .Whatsapp-floating-chat {
 
     display: grid;
     align-content: start;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 1fr 12fr;
     column-gap: .3rem;
     justify-content: space-between;
-
+    margin: 1rem 0;
 }
+
+/* .key-feature-item h3 {
+    font-weight: 800;
+} */
 
 .key-feature-item p {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
-    margin-bottom: 1rem;
-
-    line-height: 1.0;
+    line-height: .8;
 
 }
 
@@ -328,7 +329,7 @@ main .Whatsapp-floating-chat {
 .main-trusted-experts h3 {
     font-family: "DM Sans", serif;
     font-size: clamp(1rem, 2vw, 1.3rem);
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.0;
     display: inline-block;
 
