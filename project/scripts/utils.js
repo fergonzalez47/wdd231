@@ -134,3 +134,25 @@ export function displayIconsServices(services, container) {
         container.appendChild(serviceElement);
     });
 }
+
+
+
+
+export function addRequestBtnService(containerList) {
+
+
+    containerList.forEach(container => {
+        const requestBtn = document.createElement("a");
+        requestBtn.textContent = "Request a Free Estimate";
+        requestBtn.classList.add("cta-3");
+        requestBtn.href = "https://wa.me/13854360911?text=" +
+            encodeURIComponent("Hi, I am interested in requesting an estimate for cleaning services. Could you please provide more details about... ?");
+        
+        requestBtn.target = "_blank";
+        requestBtn.rel = "noopener noreferrer";
+
+
+        container.appendChild(requestBtn);
+    });
+}
+

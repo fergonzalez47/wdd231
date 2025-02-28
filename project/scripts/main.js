@@ -1,19 +1,14 @@
-import { handleNavbarScroll } from "./navscroll.js";
-import { apiFetch, displayServices, inputPhoneNumber, displayIconsServices } from "./utils.js";
-// import { loadWeatherData } from "./weather.js";
+
+import { apiFetch, displayServices, inputPhoneNumber, displayIconsServices, addRequestBtnService } from "./utils.js";
 import { displayInf } from "./thanks.js";
 import { renderServices } from "./services.js";
-
-
-
+import { initIntersectionObserver } from "./ioo.js";
 
 const servicesPath = "scripts/features.json";
 
 
-
-
 //check if the input number exists
-window.addEventListener("load", async () => {
+window.addEventListener("DOMContentLoaded", async () => {
 
     if (document.getElementById("key-features")) {
         const services = await apiFetch(servicesPath);
@@ -32,19 +27,11 @@ window.addEventListener("load", async () => {
     
     if (document.getElementById("phone")) {
         inputPhoneNumber();
-        console.log("si");
     }
-    // const weather = document.getElementById("weather");
-
-    // if (weather) {
-    //     loadWeatherData();
-    // }
-
 
     if (document.getElementById("received-inf")) {
         displayInf();
     }
-
 
     const timestampInput = document.getElementById("timestamp");
     // Asigna el valor actual de tiempo (timestamp en milisegundos) al campo oculto del formulario mio
@@ -56,4 +43,14 @@ window.addEventListener("load", async () => {
     if (servicesContainer) {
         renderServices();
     }
+
+
+    const ServiceContainerInfoList = document.querySelectorAll(".services-container-inf");
+    if (ServiceContainerInfoList) {
+        addRequestBtnService(ServiceContainerInfoList);
+    } else {
+        console.log("nadaaa");
+    }
+
+    initIntersectionObserver();
 });

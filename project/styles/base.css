@@ -40,6 +40,7 @@ body {
 /* Whatsapp icon */
 
 
+
 main .Whatsapp-floating-chat {
     position: fixed;
     bottom: 1.5rem;
@@ -168,6 +169,58 @@ main .Whatsapp-floating-chat {
 }
 
 
+/* cta-4 */
+
+.cta-4 {
+    display: inline-block;
+    padding: 8px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    border-radius: 6px;
+    margin-top: 1.25rem;
+}
+
+.cta-4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    transition: width 0.4s ease-in-out;
+}
+
+.cta-4 {
+    color: var(--color-black);
+    background-color: var(--color-black);
+    border: 2px solid var(--color-black);
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.cta-4::after {
+    background-color: var(--color-black);
+}
+
+.cta-4:hover {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    border-color: var(--color-black);
+}
+
+.cta-4:hover::after {
+    width: 100%;
+}
+
+.cta-4:active {
+    transform: scale(0.98);
+}
+
 
 /* /main */
 
@@ -223,6 +276,7 @@ main .Whatsapp-floating-chat {
 .main-img img {
     width: 100%;
     height: auto;
+    clip-path: polygon(83% 0, 100% 50%, 84% 100%, 0% 100%, 0 52%, 0% 0%);
 
 }
 
@@ -246,6 +300,7 @@ main .Whatsapp-floating-chat {
 
 .icon-service-card:hover {
     cursor: pointer;
+    transform: scale(1.1);
     box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
 }
 
@@ -425,7 +480,7 @@ footer .footer-socialmedia ul {
 /*  */
 
 .main-join {
-    margin-top: 2rem;
+    margin-top: 100px;
 }
 
 .section-join-welcome h1 {
@@ -795,10 +850,18 @@ dialog.closing {
 
 /* about */
 
-
+.branch-name {
+    border-bottom: 2px solid var(--color-gold);
+}
 
 .about-grid-container {
     display: grid;
+}
+
+.about-grid-container .final-contact-container {
+    text-align: center;
+    width: 100%;
+    grid-column: 1 / -1;
 }
 
 .container-hero-about {
@@ -847,7 +910,7 @@ dialog.closing {
 
 .about-values>div,
 .container-why-choose>div {
-    margin: .75rem 0;
+    margin: 1rem 0;
 }
 
 .about-values h3 {
@@ -857,13 +920,23 @@ dialog.closing {
 }
 
 .about-values p {
+
     font-weight: 400;
+    padding-left: .45rem;
+    margin: 0 auto;
 
 }
 
+.about-values ul {
+    padding-left: .5rem;
+}
+
+.about-values ul li{
+    margin: .8rem 0;
+}
 
 .container-why-choose ul {
-    margin-left: .45rem;
+    margin-left: .5rem;
 
 }
 
@@ -903,6 +976,42 @@ dialog.closing {
 }
 
 
+.main-servicespage {
+    margin-top: 150px;
+}
+
+
+
+.services-container-grid {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1rem .25rem;
+}
+
+
+
+
+.services-container-grid>div:first-child {
+    max-width: 100%;
+}
+
+
+.services-container-grid>div:first-child img {
+    width: 100%;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
 
 /* developer */
 
@@ -919,6 +1028,50 @@ dialog.closing {
 
 
 
+
+
+/* Intersection Observer Object: */
+
+/* 1*/
+/* .hidden {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden-content {
+    opacity: 0;
+    transform: translateX(-100px) scale(1);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.visible-content {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition-delay: 0.3s;
+} */
+
+
+/* Antes de que el elemento sea visible */
+.IOO {
+    opacity: 0;
+    transform: translateY(60px);
+    /* Mueve el elemento 60px hacia abajo */
+    transition: opacity 1s ease, transform 1s ease;
+    /* Transiciones de opacidad y movimiento */
+}
+
+/* Cuando el elemento es visible */
+.IOO.visible {
+    opacity: 1;
+    transform: translateY(0);
+    /* El elemento se mueve a su posición original */
+}
 
 
 @keyframes heartbeat {

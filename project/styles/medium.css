@@ -64,4 +64,51 @@
         justify-self: center;
     }
 
+
+
+    /* services page */
+
+
+    .main-servicespage {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .services-container-grid {
+        display: grid;
+        justify-items: start;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 1.5rem;
+        align-items: center;
+    }
+
+    .services-container-grid h2 {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        justify-self: center;
+    }
+
+
+
+
+    .services-container-grid:nth-child(even) {
+        direction: rtl;
+        border-top: 2px solid var(--color-light-blue);
+        border-bottom: 2px solid var(--color-light-blue);
+    }
+
+    /* .services-container-grid:nth-child(even)>* {
+        direction: ltr;
+    } */
+
+
+    .services-container-grid:nth-child(even) img {
+        clip-path: polygon(100% 0%, 100% 55%, 100% 100%, 19% 100%, 0% 50%, 19% 1%);
+
+    }
+
+    .services-container-grid:nth-child(odd) img {
+        clip-path: polygon(83% 0, 100% 50%, 84% 100%, 0% 100%, 0 52%, 0% 0%);
+    }
+
 }
