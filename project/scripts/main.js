@@ -48,8 +48,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     const ServiceContainerInfoList = document.querySelectorAll(".services-container-inf");
     if (ServiceContainerInfoList) {
         addRequestBtnService(ServiceContainerInfoList);
-    } else {
-        console.log("nadaaa");
     }
 
     initIntersectionObserver();

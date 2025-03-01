@@ -93,7 +93,7 @@
 
     /* services page */
 
-    
+
 
     .services-container-grid {
         display: grid;
@@ -117,6 +117,10 @@
         grid-column: 2 / 3;
         grid-row: 2 / 3;
 
+    }
+
+    footer {
+        grid-template-columns: repeat(4, 1fr);
     }
 
 }
